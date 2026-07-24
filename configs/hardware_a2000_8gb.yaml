@@ -1,0 +1,36 @@
+runtime:
+  device: cuda
+  precision: fp16
+  gpu_memory_target_gib: 6.0
+  dataloader_workers: 4
+  seed: 20260723
+
+knowledge_tracing:
+  embedding_dim: 128
+  hidden_dim: 128
+  num_attention_heads: 4
+  max_sequence_length: 200
+  batch_size: 32
+  gradient_accumulation_steps: 2
+  epochs: 50
+  early_stopping_patience: 6
+  learning_rate: 0.001
+
+graph:
+  num_layers: 2
+  relation_types: [requires, similar_to, confusable_with]
+  num_bases: 4
+
+vlm:
+  enabled: false
+  max_batch_size: 1
+  max_pixels: 786432
+  gpu_memory_target_gib: 7.2
+  inference_only: true
+gpu_optimization:
+  device: cuda
+  mixed_precision: fp16
+  preferred_batch_size: 256
+  max_safe_vram_gib: 6
+  dataloader_workers: 4
+  note: "Profile first; reduce batch size on OOM rather than disabling CUDA."

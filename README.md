@@ -106,4 +106,4 @@ python -m pytest -q
 
 ## Licence
 
-Released under the [MIT License](LICENSE). Third-party datasets and pretrained models are **not** covered by this licence; follow their respective terms.
+No open-source licence has been selected for this preliminary public code release. Before reuse or redistribution, please contact the repository owner. Third-party datasets and pretrained models are governed by their respective terms.

@@ -1,0 +1,31 @@
+# Python and test artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments and IDE files
+.venv/
+venv/
+.idea/
+.vscode/
+
+# Data, checkpoints, logs, and generated outputs
+data/raw/
+data/processed/
+artifacts/
+outputs/
+work/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.parquet
+*.zip
+
+# Local operating-system files
+.DS_Store
+Thumbs.db

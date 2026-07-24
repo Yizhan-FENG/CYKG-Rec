@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cykg-rec"
+version = "0.1.0"
+description = "Evidence-gated, version-aware knowledge graph recommendation for Chengdu-Chongqing K-12 education"
+requires-python = ">=3.11,<3.12"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
